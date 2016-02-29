@@ -42,3 +42,10 @@ configure :build do
   # Minify Javascript on build
   # activate :minify_javascript
 end
+
+
+# #Adding Autoprefixer -- https://github.com/middleman/middleman-autoprefixer#usage
+# activate :autoprefixer
+
+# #Adding in Sprockets to make the rails vs of bootstrap work -- https://github.com/middleman/middleman-sprockets
+# activate :sprockets

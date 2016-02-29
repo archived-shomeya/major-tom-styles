@@ -1,24 +1,45 @@
 @charset "utf-8";
-@import "normalize";
+@import "bootstrap";
+
+//Color Palette{
+
+$logo: rgb(239, 86, 17);
+$tagline: rgb(0, 162, 143);
 
 body {
-  background: #ECC561;
-  text-align: center;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: #fff;
+  text-align: left;
+  font-family: ""Lato", "Helvetica Neue", Helvetica, Arial, sans-serif";
   font-size: 1em;
+  margin-left: 5em;
 }
 
-.logo img {
-  height: 18.75em;
-  margin-top: 6em;
+h1.logo {
+  color: $logo;
+  display: inline;
+  font-family: "adelle", "adelle-2";
+  font-size: 120px;
+  font-style: italic;
+  font-weight: 900;
+  text-rendering: optimizelegibility;
+  height: auto;
+  line-height: 56px;
+  text-shadow: rgba(0, 0, 0, 0.4) 1px 1px 0px;
 }
 
-h1 {
-  color: rgba(0,0,0,0.5);
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.8em;
-  font-weight: 400;
-  margin: 0;
+.tagline {
+  color: $tagline;
+  display: block;
+  font-family: adelle-1, adelle-2, Georgia, 'Times New Roman', Times, serif;
+  font-size: 29px;
+  font-weight: 500;
+  height: 60px;
+  line-height: 60px;
+  margin-bottom: 40px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 15px;
+  text-rendering: optimizelegibility;
 }
 
 .doc {

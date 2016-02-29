@@ -5,10 +5,13 @@
     <meta charset="utf-8">
     <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
 
+
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "Middleman" %></title>
 
     <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+    <script src="https://use.typekit.net/uhr2ppx.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
     <%= stylesheet_link_tag :site %>
     <%= javascript_include_tag :all %>
@@ -16,5 +19,11 @@
 
   <body class="<%= page_classes %>">
     <%= yield %>
+    <div class="navbar navbar-default">
+      <%= link_to 'Current', '/current.html' %>
+      <%= link_to 'Style 1', '/style1.html' %>
+      <%= link_to 'Style 2', '/style2.html' %>
+      <%= link_to 'Style 3', '/style3.html' %>
+    </div>
   </body>
 </html>

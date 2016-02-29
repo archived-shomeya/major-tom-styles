@@ -8,7 +8,18 @@ gem 'wdm', '~> 0.1.0', platforms: [:mswin, :mingw]
 # Windows does not come with time zone data
 gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 
+
 # Middleman Gems
 gem 'middleman', '>= 4.0.0'
 gem 'middleman-livereload'
-gem 'middleman-compass', '>= 4.0.0'
+gem 'middleman-sprockets', '>= 4.0.0.ec.1'
+# gem 'jquery-rails'
+# gem 'middleman-autoprefixer'
+#
+# Bootstrap integration
+gem 'bootstrap', '~> 4.0.0.alpha3'
+
+# # Bootsrap tooltip
+# source 'https://rails-assets.org' do
+#   gem 'rails-assets-tether', '>= 1.1.0'
+# end
