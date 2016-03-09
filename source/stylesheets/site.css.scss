@@ -15,9 +15,35 @@ $texture2: rgb(0, 0, 0);
 $texture3: rgb(255, 255, 255);
 
 //Colors
-$color1: rgb(144, 144, 144);
-$color2: rgb(0, 0, 0);
-$color3: rgb(255, 255, 255);
+$color1-plain: rgb(144, 144, 144);
+$color2-plain: rgb(0, 0, 0);
+$color3-plain: rgb(255, 255, 255);
+
+//---Style 1 variables
+
+// Colors
+$color1-style1: rgb(144, 144, 144);
+$color2-style1: rgb(0, 0, 0);
+$color3-style1: rgb(255, 255, 255);
+
+// Fonts
+
+$style-1-font: factoria;
+
+//---Style 2 variables
+
+// Colors
+
+$color1-style2: rgb(144, 144, 144);
+$color2-style2: rgb(0, 0, 0);
+$color3-style2: rgb(255, 255, 255);
+
+//---Style 3 variables
+
+// Colors
+$color1-style3: rgb(144, 144, 144);
+$color2-style3: rgb(0, 0, 0);
+$color3-style3: rgb(255, 255, 255);
 
 //Shadows
 @mixin small-square-shadow {
@@ -117,28 +143,32 @@ h1.logo {
   background: $texture3;
 }
 
-//Colors
+//Colors -- Plain
 .colors-1 {
-  background: $color1;
+  background: $color1-plain;
   margin-left: 0;
 
 }
 
 .colors-2 {
-  background: $color2;
+  background: $color2-plain;
 
 }
 
 .color-3 {
-  background: $color3;
+  background: $color3-plain;
 
 }
 
 //Buttons
+
+.text-buttons {
+  margin-top:1.5em;
+}
+
 .buttons {
   display: flex;
   flex-direction: row;
-  flex-grow: short;
 }
 
 //Paragraph text
@@ -146,3 +176,19 @@ h1.logo {
 .text p {
   width: 75%;
 }
+
+// Style 1 Styles
+
+.style-1 {
+  .color-1 {
+
+  }
+
+  .text-buttons {
+    p {
+      font-family: $style-1-font;
+    }
+  }
+}
+
+//
