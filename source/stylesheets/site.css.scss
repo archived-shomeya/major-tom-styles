@@ -6,7 +6,7 @@ $enable-flex: true;
 //---Colors
 $logo: rgb(239, 86, 17);
 $tagline: rgb(0, 162, 143);
-$shadow: rgba(204,204,204,1);
+$shadow: rgba(204, 204, 204, 1);
 $border-color1: rgb(0, 0, 0);
 
 //Textures
@@ -22,13 +22,13 @@ $color3-plain: rgb(255, 255, 255);
 //---Style 1 variables
 
 // Colors
-$color1-style1: rgb(144, 144, 144);
-$color2-style1: rgb(0, 0, 0);
-$color3-style1: rgb(255, 255, 255);
+$color1-style1: #419cef;
+$color2-style1: #a2395b;
+$color3-style1: rgb(66, 66, 66);
 
 // Fonts
 
-$style-1-font: factoria;
+$style-1-font: "industry";
 
 //---Style 2 variables
 
@@ -53,66 +53,46 @@ $color3-style3: rgb(255, 255, 255);
 }
 
 //Borders
-@mixin border1 { border: solid 3px $border-color1; }
+@mixin border1 {
+  border: solid 3px $border-color1;
+}
 
 //Spacing
-@mixin margin-box {margin: 5px 10px;}
-
-
+@mixin margin-box {
+  margin: 5px 10px;
+}
 
 //---General Styles
+
+.image {
+  margin-left: -50px;
+
+  img {
+    width: 500px;
+    height: 300px;
+  }
+
+}
 
 body {
   background: #fff;
   text-align: left;
-  font-family: ""Lato", "Helvetica Neue", Helvetica, Arial, sans-serif";
+  font-family: "" Lato ", " Helvetica Neue ", Helvetica, Arial, sans-serif";
   font-size: 1em;
   margin-left: 5em;
 }
 
-h1.logo {
-  color: $logo;
-  display: inline;
-  font-family: "adelle", "adelle-2";
-  font-size: 120px;
-  font-style: italic;
-  font-weight: 900;
-  text-rendering: optimizelegibility;
-  height: auto;
-  line-height: 56px;
-  text-shadow: rgba(0, 0, 0, 0.4) 1px 1px 0px;
-}
-
-.tagline {
-  color: $tagline;
-  display: block;
-  font-family: adelle-1, adelle-2, Georgia, 'Times New Roman', Times, serif;
-  font-size: 29px;
-  font-weight: 500;
-  margin-bottom: 40px;
-  margin-left: 0px;
-  margin-right: 0px;
-  margin-top: 15px;
-  text-rendering: optimizelegibility;
-  .current {
-    line-height: 0.8em;
-  }
-}
-
-
-
-
 //-----Style tile elements
 
-.container {
+.main.container {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .boxes.container {
   display: flex;
   align-items: flex-start;
+  flex-direction: row;
   padding: 0;
   margin: 0;
 
@@ -127,7 +107,6 @@ h1.logo {
 }
 
 //Textures
-
 
 .texture-1 {
   background: $texture1;
@@ -163,7 +142,7 @@ h1.logo {
 //Buttons
 
 .text-buttons {
-  margin-top:1.5em;
+  margin-top: 1.5em;
 }
 
 .buttons {
@@ -177,11 +156,192 @@ h1.logo {
   width: 75%;
 }
 
+//---Current Styles
+
+.current {
+
+  h1.logo {
+    color: $logo;
+    display: inline;
+    font-family: "adelle", "adelle-2";
+    font-size: 120px;
+    font-style: italic;
+    font-weight: 900;
+    text-rendering: optimizelegibility;
+    height: auto;
+    line-height: 56px;
+    text-shadow: rgba(0, 0, 0, 0.4) 1px 1px 0px;
+  }
+
+  .tagline {
+    color: $tagline;
+    display: block;
+    font-family: adelle-1, adelle-2, Georgia, 'Times New Roman', Times, serif;
+    font-size: 29px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 15px;
+    text-rendering: optimizelegibility;
+    .current {
+      line-height: 0.8em;
+    }
+  }
+
+  // Headers
+
+  h1 {
+    color: rgb(51, 51, 51);
+    display: block;
+    font-family: adelle-1, adelle-2, Georgia, 'Times New Roman', Times, serif;
+    font-size: 44px;
+    font-weight: bold;
+    height: 86px;
+    line-height: 43px;
+    margin-bottom: 14px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 14px;
+  }
+
+  h2 {
+    color: rgb(0, 162, 143);
+    display: block;
+    font-family: adelle-1, adelle-2, Georgia, 'Times New Roman', Times, serif;
+    font-size: 29px;
+    font-weight: 500;
+    height: 60px;
+    line-height: 60px;
+    margin-bottom: 40px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 15px;
+  }
+
+  .headers {
+    margin-bottom: 45px;
+  }
+
+  //Buttons
+
+  .btn {
+    -webkit-appearance: none;
+    -webkit-box-shadow: rgba(255, 255, 255, 0.2) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.0470588) 0px 1px 2px 0px;
+    -webkit-transition-delay: 0s;
+    -webkit-transition-duration: 0.1s;
+    -webkit-transition-property: background-position;
+    -webkit-transition-timing-function: linear;
+    -webkit-writing-mode: horizontal-tb;
+    align-items: flex-start;
+    background-color: rgb(239, 86, 17);
+    background-image: linear-gradient(rgb(244, 137, 89), rgb(239, 86, 17));
+    background-position: 0px -15px;
+    background-repeat: repeat-x;
+    border-bottom-color: rgba(0, 0, 0, 0.247059);
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-image-outset: 0px;
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    border-image-source: none;
+    border-image-width: 1;
+    border-left-color: rgba(0, 0, 0, 0.0980392);
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-right-color: rgba(0, 0, 0, 0.0980392);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-top-color: rgba(0, 0, 0, 0.0980392);
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.0470588) 0px 1px 2px 0px;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 26px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    height: 38px;
+    letter-spacing: normal;
+    line-height: 28px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    padding-bottom: 4px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 4px;
+    text-align: center;
+    text-decoration: none;
+    text-indent: 0px;
+    text-shadow: rgba(0, 0, 0, 0.247059) 0px -1px 0px;
+    text-transform: none;
+    transition-delay: 0s;
+    transition-duration: 0.1s;
+    transition-property: background-position;
+    transition-timing-function: linear;
+    vertical-align: middle;
+    width: 149.296875px;
+    word-spacing: 0px;
+    writing-mode: lr-tb;
+  }
+}
+
+//---Style 1 Specific Elements
+
 // Style 1 Styles
 
 .style-1 {
-  .color-1 {
 
+  h1 {
+    color: rgb(51, 51, 51);
+    display: block;
+    font-family: "clavo-1", "clavo-2";
+    font-size: 44px;
+    font-weight: bold;
+    height: 86px;
+    line-height: 43px;
+    margin-bottom: 14px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 14px;
+  }
+
+  h2 {
+    color: $color2-style1;
+    display: block;
+    font-family: "clavo-1", "clavo-2";
+    font-size: 29px;
+    font-weight: 200;
+    height: 60px;
+    line-height: 60px;
+    margin-bottom: 40px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 15px;
+  }
+
+  .colors {
+    .color-1 {
+      background-color: $color1-style1;
+    }
+
+    .color-2 {
+      background-color: $color2-style1;
+    }
+
+    .color-3 {
+      background-color: $color3-style1;
+    }
   }
 
   .text-buttons {
@@ -189,6 +349,31 @@ h1.logo {
       font-family: $style-1-font;
     }
   }
-}
 
-//
+  .logo {
+    color: $color1-style1;
+    display: inline;
+    font-family: "clavo-1", "clavo-2";
+    font-style: italic;
+    font-size: 120px;
+    font-weight: 900;
+    text-rendering: optimizelegibility;
+    height: auto;
+    line-height: 56px;
+    text-shadow: rgba(0, 0, 0, 0.4) 1px 1px 0px;
+
+  }
+
+  .tagline {
+    color: $color2-style1;
+    display: block;
+    font-family: "clavo-1", "clavo-2";
+    font-size: 29px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 15px;
+    text-rendering: optimizelegibility;
+  }
+}
