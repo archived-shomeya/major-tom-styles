@@ -197,7 +197,6 @@ body {
     font-family: adelle-1, adelle-2, Georgia, 'Times New Roman', Times, serif;
     font-size: 44px;
     font-weight: bold;
-    height: 86px;
     line-height: 43px;
     margin-bottom: 14px;
     margin-left: 0px;
@@ -211,7 +210,6 @@ body {
     font-family: adelle-1, adelle-2, Georgia, 'Times New Roman', Times, serif;
     font-size: 29px;
     font-weight: 500;
-    height: 60px;
     line-height: 60px;
     margin-bottom: 40px;
     margin-left: 0px;
@@ -308,7 +306,6 @@ body {
     font-family: "clavo-1", "clavo-2";
     font-size: 44px;
     font-weight: bold;
-    height: 86px;
     line-height: 43px;
     margin-bottom: 14px;
     margin-left: 0px;
@@ -322,7 +319,6 @@ body {
     font-family: "clavo-1", "clavo-2";
     font-size: 29px;
     font-weight: 200;
-    height: 60px;
     line-height: 60px;
     margin-bottom: 40px;
     margin-left: 0px;
@@ -349,6 +345,8 @@ body {
       font-family: $style-1-font;
     }
   }
+
+  //jane naps things
 
   .logo {
     color: $color1-style1;

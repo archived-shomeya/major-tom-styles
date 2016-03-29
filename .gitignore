@@ -1,3 +1,8 @@
+# Middleman Files #
+###################
+build
+
+
 # OS generated files #
 ######################
 .DS_Store
