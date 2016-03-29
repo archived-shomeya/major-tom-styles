@@ -24,6 +24,6 @@ gem 'bootstrap', '~> 4.0.0.alpha3'
 #   gem 'rails-assets-tether', '>= 1.1.0'
 # end
 
-## For deploying on GitHub Pages
-gem "middleman-deploy", "~> 1.0"
-gem "builder", "~> 3.0"
+# ## For deploying on GitHub Pages
+# gem "middleman-deploy", "~> 1.0"
+# gem "builder", "~> 3.0"

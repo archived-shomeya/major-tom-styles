@@ -52,12 +52,12 @@ end
 # #Adding in Sprockets to make the rails vs of bootstrap work -- https://github.com/middleman/middleman-sprockets
 # activate :sprockets
 
-## Activating deploy for GitHub pages integration
-
-activate :deploy do |deploy|
-  deploy.method = :git
-  deploy.branch = 'master'
-  deploy.build_before = true
-end
-
-activate :directory_indexes
+# ## Activating deploy for GitHub pages integration
+#
+# activate :deploy do |deploy|
+#   deploy.method = :git
+#   deploy.branch = 'master'
+#   deploy.build_before = true
+# end
+#
+# activate :directory_indexes
