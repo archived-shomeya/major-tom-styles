@@ -19,7 +19,11 @@ gem 'middleman-sprockets', '>= 4.0.0.ec.1'
 # Bootstrap integration
 gem 'bootstrap', '~> 4.0.0.alpha3'
 
-# # Bootsrap tooltip
+# # Bootstrap tooltip
 # source 'https://rails-assets.org' do
 #   gem 'rails-assets-tether', '>= 1.1.0'
 # end
+
+## For deploying on GitHub Pages
+gem "middleman-deploy", "~> 1.0"
+gem "builder", "~> 3.0"
