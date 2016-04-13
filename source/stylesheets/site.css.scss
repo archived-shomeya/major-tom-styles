@@ -31,13 +31,27 @@ $btn1-color-style1: #a2395b;
 
 $style-1-font: "industry";
 
+//Gradient
+
+$linear1-style1: linear-gradient(rgba(255, 255, 255, .3), rgba(230, 230, 230, .6));
+
+//-----------------------------
+
 //---Style 2 variables
 
 // Colors
 
-$color1-style2: rgb(144, 144, 144);
-$color2-style2: rgb(0, 0, 0);
+$color1-style2: rgb(207, 7, 139);
+$color2-style2: rgb(207, 190, 96);
 $color3-style2: rgb(255, 255, 255);
+
+// Fonts
+$style-2-font1: "parisine-plus-std-gris", sans-serif;
+$style-2-font2:  "prenton", sans-serif;
+
+
+//------------------------------
+
 
 //---Style 3 variables
 
@@ -62,6 +76,8 @@ $color3-style3: rgb(255, 255, 255);
 @mixin margin-box {
   margin: 5px 10px;
 }
+
+
 
 //---General Styles
 
@@ -233,8 +249,8 @@ body {
     -webkit-transition-timing-function: linear;
     -webkit-writing-mode: horizontal-tb;
     align-items: flex-start;
-    background-color: $btn1-color-style1;
-    //background-image: linear-gradient(rgb(244, 137, 89), rgb(239, 86, 17));
+    background-color: rgb(239, 86, 17);
+    background-image: linear-gradient(rgb(244, 137, 89), rgb(239, 86, 17));
     background-position: 0px -15px;
     background-repeat: repeat-x;
     border-bottom-color: rgba(0, 0, 0, 0.247059);
@@ -385,8 +401,8 @@ body {
     -webkit-transition-timing-function: linear;
     -webkit-writing-mode: horizontal-tb;
     align-items: flex-start;
-    background-color: rgb(239, 86, 17);
-    background-image: linear-gradient(rgb(244, 137, 89), rgb(239, 86, 17));
+    background-color: $btn1-color-style1;
+    background-image: $linear1-style1;
     background-position: 0px -15px;
     background-repeat: repeat-x;
     border-bottom-color: rgba(0, 0, 0, 0.247059);
@@ -445,5 +461,32 @@ body {
     word-spacing: 0px;
     writing-mode: lr-tb;
   }
+
+}
+
+//---Style 2 Styles
+
+// Style 2
+
+.style-2 {
+
+  p, h4, h3, {
+    font-family: $style-2-font2;
+  }
+
+  h1.logo {
+    font-family: $style-2-font1;
+    color: $color1-style2;
+    font-size: 8em;
+    font-style: italic;
+    font-weight: 900;
+    letter-spacing: -10px;
+  }
+
+  h4 {
+    color: $color2-style2;
+  }
+
+
 
 }
